@@ -1,0 +1,252 @@
+/*© BY BIMA DWIANANTO / 2201784081 & Alfons Gustinus / 2201772301 */
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    background-color: black;
+
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#header{
+    background: white;
+    padding: 10px;
+    color: black;
+}
+
+#header .navigation ul{
+    list-style-type: none;
+    padding: 30px;
+    margin: 0;
+}
+
+#header .navigation ul li{
+    display: inline-block;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+#header .navigation ul li a:visited{
+    color: black;
+    transition: 0.3s ease;
+}
+
+#header .navigation ul li a:hover{
+    color: red;
+    transition: 0.3s ease;
+}
+
+#header .login{
+    padding: 30px;
+}
+
+
+/*Home*/
+#banner .logo{
+    padding: 30px;
+}
+
+.desc1, .desc2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: white;
+}
+
+.desc1{
+    font-size: medium;
+}
+.desc2{
+    font-size: medium;
+}
+
+/* Register Page */
+#register{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    box-sizing: border-box;
+    padding: 50px;
+    margin-left: 70;
+    margin-right: auto;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+}
+
+.register_image{
+    width: 100%;
+    margin: auto;
+}
+
+/*premium*/
+
+#premium .desc1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+}
+
+.desc2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+.price{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 30px;
+    text-align: center;
+}
+
+#content{
+    background-color: black;
+    padding: 10 px;
+    font-size: 28px;
+    color: white;
+
+}
+
+/*Login Page*/
+#login{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/*Genre*/
+#genre{
+    box-sizing: border-box;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+/*genre box*/
+.img-container {
+    float: right;
+    width: 24.34%;
+    padding: 2px;
+    color: black;
+  }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+   
+    display: table;
+}
+
+#genre .img-container a:visited{
+    color: black;
+    transition: 0.3s ease;
+}
+
+/*table list*/
+table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th{
+border: 1px solid ;
+text-align: center;
+padding: 8px;
+}
+
+/* footer */
+#footer{
+    position: flex;
+    width: 100%;
+    background-color: white;
+    margin-top: auto;
+}
+
+.copyright{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 50%;
+    color: black;
+}
+
+.sosmed{
+    padding: 15px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*jquery image picture*/
+.pict{
+    margin-left : 160px;
+    border: 5px ;
+}
+
+/*dropdown menu*/
+.dropbtn{
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 1px;
+}
+
+.dropdwn{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+}
+
+.dropdwn-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 16px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
+    z-index: 1;
+}
+.dropdwn-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdwn-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdwn:hover .dropdwn-content {
+    display: block;
+}
+  
+.dropdwn:hover .dropbtn {
+    background-color: #3e8e41;
+}

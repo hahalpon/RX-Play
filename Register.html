@@ -1,0 +1,123 @@
+<!--© BY BIMA DWIANANTO / 2201784081 & Alfons Gustinus / 2201772301-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RX Player | Project Human Computer Interaction</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- Header -->
+<div id="header">
+    <div class="row">
+        <div class="column">
+            <a href="RXplayer.html"><img src="Asset/Logo/Logo.png" width="138" height="85" align="left" hspace="100"></a>
+
+            <div class="navigation">
+                <ul>
+                    <li><a style="text-decoration: none;" href="RXplayer.html">HOME</a></li>
+                    <li>|</li>
+                    <li><a style="text-decoration: none;" href="Genre.html">GENRE</a></li>
+                    <li>|</li>
+                    <li><a style="text-decoration: none;" href="TopList.html">TOP 10</a></li>
+                    <li>|</li>
+                    <li><a style="text-decoration: none;" href="Premium.html">PREMIUM</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="login">
+            <a href="Login.html"><img src="Asset/Icon/Login.png" width="81px" height="33px" align="right" hspace="30"></a>
+            <a href="Register.html"><img src="Asset/Icon/SignUp.png" width="81px" height="33px" align="right" hspace="10"></a>
+        </div>
+    </div>
+</div>
+
+<!--Main-->
+<div id="register">
+    <div class="body">
+        <h1>
+            Join with us and enjoy world-wide community music library. Premium or Free? Your choice.
+        </h1>
+        <h2>
+            PS*: You're not gonna regret it! <br><br>
+        </h2>
+    </div>
+
+    <div class="register_image">
+        <img src="Asset/web/register2.jpg" width="600" height="400" align="left" hspace="30">
+    </div>
+
+    <label for="name"><b>Full Name :</b></label><br>
+    <input type="text" id="username" placeholder="Enter your name" name="name" required><br><br>
+
+    <label for="email"><b>Email :</b></label><br>
+    <input type="text" id="email-input" placeholder="Enter your email" name="email" required><br><br>
+
+    <label for="gender"><b>Gender :</b></label> <br>
+    <input id="radio-male" type="radio" name="gender" value="male"> Male <br>
+    <input id="radio-female" type="radio" name="gender" value="male"> Female <br>
+    <input id="other-radio" type="radio" name="gender" value="male"> Other <br> <br> 
+
+    <label for="password"><b>Password :</b></label><br>
+    <input type="password" placeholder="Enter your password" name="password"  id="password"
+    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter,
+     and at least 8 or more characters" required><br>
+    <input type="password" id="reenterpassword" placeholder="Re-Enter password" name="repassword" required><br><br>
+
+    <label for="payment"  ><b>Payment :</b></label><br>
+    <select name="payment" id="payment">
+        <option value="visa">Visa</option>
+        <option value="master">Master</option>
+        <option value="paypal">PayPal</option>
+        <option value="free">FREE ACCOUNT</option>
+    </select><br><br>
+
+    <input id="agree-checkbox" type="checkbox" required>
+    <label for="agreement"><b>Agree to terms and conditions.</b></label><br>
+
+    <br><br>
+    <input id="submit-btn" type="submit" onclick="onSubmitClick()" value="Register" hspace="80px">
+
+    
+</div>
+<!--Footer-->
+<div id="footer">
+    <div class="row">
+
+        <div class="column">
+            <div class="copyright" >
+                <h3>
+                    ©2020 RX.co
+                </h3>
+            </div>
+        </div>
+    
+
+        <div class="column">
+            <div class="sosmed" align="right">
+                <label for="sosmed">Click to follow our social media!</label>
+                <a href="http:/www.instagram.com/bmdwnnt"><img src="Asset/Icon/sosmed/instagram.png" width="25" height="25" hspace="5"></a>
+                <label for="sosmed"><b>RX_Player</b></label>
+                <a href="http:/www.twitter.com/"><img src="Asset/Icon/sosmed/twitter.png" width="25" height="25" hspace="5"></a>
+                <label for="sosmed"><b>RX_Player</b></label>
+                <a href="http:/www.facebook.com/"><img src="Asset/Icon/sosmed/facebook.png" width="25" height="25" hspace="5"></a>
+                <label for="sosmed"><b>RX Player</b></label>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+
+<script src="validation.js"></script>
+
+
+
+</html>

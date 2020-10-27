@@ -1,0 +1,133 @@
+<!--© BY BIMA DWIANANTO / 2201784081 & Alfons Gustinus / 2201772301-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RX Player | Project Human Computer Interaction</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="jq.js"></script>
+<script>
+    var images = new Array ("Asset/logo/Annotation 2020-06-06 191610.png" ,"Asset/logo/Annotation 2020-06-06 154444.png");
+    var index =1;
+    function rotate()
+    {
+        $('#myImage').fadeOut('fast', function()
+    {
+    $(this).attr('src', images[index]);
+
+    $(this).fadeIn('fast', function()
+    {
+      if (index == images.length-1)
+      {
+        index = 0;
+      }
+      else
+      {
+        index++;
+      }
+    });
+  });
+}
+$(document).ready(function()
+{
+  setInterval (rotate, 2500  );
+});
+</script>
+</head>
+
+<body>
+<!-- Header -->
+<div id="header">
+    <div class="row">
+        <div class="column">
+            <a href="RXplayer.html"><img src="Asset/Logo/Logo.png" width="138" height="85" align="left" hspace="100"></a>
+
+            <div class="navigation">
+                <ul>
+                    <li><a style="text-decoration: none;" href="RXplayer.html">HOME</a></li>
+                    <li>|</li>
+                    <li><a style="text-decoration: none;" href="Genre.html">GENRE</a></li>
+                    <li>|</li>
+                    <li><a style="text-decoration: none;" href="TopList.html">TOP 10</a></li>
+                    <li>|</li>
+                    <li><a style="text-decoration: none;" href="Premium.html">PREMIUM</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="login">
+            <a href="Login.html"><img src="Asset/Icon/Login.png" width="81px" height="33px" align="right" hspace="30"></a>
+            <a href="Register.html"><img src="Asset/Icon/SignUp.png" width="81px" height="33px" align="right" hspace="10"></a>
+        </div>
+    </div>
+</div>
+<!--content-->
+<div id="content">
+    <div class="pict">
+        <img id = "myImage" src="Asset/logo/Annotation 2020-06-06 191610.png" alt="tes" border=4 height="820" width="1200">
+    </div>
+</div>
+
+
+<!--Banner-->
+<div id="banner">
+
+    <div class="logo">
+        <img src="Asset/Logo/Logo.png" width="366" height="291" align="right" hspace="100">
+    </div>
+
+    <div class="desc1">
+        <h2 align="justify">
+            RX Player is a digital music player formed in December 2019 and located in Jakarta, Indonesia. The main purpose of the RX Player is to provide milions of high-quality song from ant of the countries all around the world.
+        </h2>
+    </div>
+
+    <div class="desc2">
+        <h2 align="justify">
+            RX Player also provides all kinds of genres. Songs in RX Players are always updated everyday. The user can also be the creator that can upload their song to the RX Player and share that song privately or publicly.
+        </h2>
+    </div> 
+
+</div>
+
+
+
+
+
+<!--Footer-->
+<div id="footer">
+    <div class="row">
+
+        <div class="column">
+            <div class="copyright" >
+                <h3>
+                    ©2020 RX.co
+                </h3>
+            </div>
+        </div>
+    
+
+        <div class="column">
+            <div class="sosmed" align="right">
+                <label for="sosmed">Click to follow our social media!</label>
+                <a href="http:/www.instagram.com/bmdwnnt"><img src="Asset/Icon/sosmed/instagram.png" width="25" height="25" hspace="5"></a>
+                <label for="sosmed"><b>RX_Player</b></label>
+                <a href="http:/www.twitter.com/"><img src="Asset/Icon/sosmed/twitter.png" width="25" height="25" hspace="5"></a>
+                <label for="sosmed"><b>RX_Player</b></label>
+                <a href="http:/www.facebook.com/"><img src="Asset/Icon/sosmed/facebook.png" width="25" height="25" hspace="5"></a>
+                <label for="sosmed"><b>RX Player</b></label>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+
+
+
+
+
+
+</html>
